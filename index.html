@@ -20,8 +20,16 @@
         color: #874b9b;
         font-family: "Arial Black", fantasy;
     }
-    
-    header{
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: space-around;
+        background: #ffff;
+    }
+    /*header{
         padding: 5px;
         width: 100%;
         margin-top: -30px;
@@ -37,7 +45,7 @@
         line-height: 100px;
         width:30%;
         float: left;
-    }
+    }*/
     .logo a{
         text-decoration:none;
         font-family: "Arial Black";
@@ -234,22 +242,22 @@
 </script>
 </head>
 <body>
-    <div class = "header">
+    <div class = "container">
         <header>
-            <img id = "logo" src = "favicon.png"/>
+            <img class = "item" id = "logo" src = "favicon.png"/>
             <div class = "wrapper">
                 <div class = "logo">
                     
-                    <a href = "#">  Shlok Desai</a>
+                    <a class = "item" href = "#">  Shlok Desai</a>
                 </div>
                 <nav>
-                    <a href = "#wai"><img id = "BioImg" src = "bio.png"/></a>
-                    <a href = "#edu"><img id = "EduImg" src = "edu.png"/></a>
-                    <a href = "#ac"><img id = "AcImg" src = "ac.png"/></a>
-                    <a href = "#ec"><img id = "EcsImg" src = "ecs.png"/></a>
-                    <a href = "#pl"><img id = "PlImg" src = "pl.png"/></a>
-                    <a href = "#aw"><img id = "ArtImg" src = "art.png"/></a>
-                    <a href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/></a>
+                    <a  class = "item" href = "#wai"><img id = "BioImg" src = "bio.png"/></a>
+                    <a class = "item" href = "#edu"><img id = "EduImg" src = "edu.png"/></a>
+                    <a class = "item" href = "#ac"><img id = "AcImg" src = "ac.png"/></a>
+                    <a class = "item" href = "#ec"><img id = "EcsImg" src = "ecs.png"/></a>
+                    <a class = "item" href = "#pl"><img id = "PlImg" src = "pl.png"/></a>
+                    <a class = "item" href = "#aw"><img id = "ArtImg" src = "art.png"/></a>
+                    <a class = "item" href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/></a>
                 </nav>
             </div>
         </header>
