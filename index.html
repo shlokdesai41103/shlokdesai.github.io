@@ -198,25 +198,6 @@
         border: solid;
         border-width: 10px;
     }*/
-    #navButton1{
-        height: 30px;
-        width: 30px;
-        position: relative;
-        float:right;
-    }
-    
-    #navButton2{
-        height: 30px;
-        width: 30px;
-        position: relative;
-        float:left;
-    }
-    #count{
-        display: none;
-    }
-    #pllist{
-        list-style-image: url(pl.png);
-    }
     
 
 
@@ -246,13 +227,6 @@
     
     }
     
-    function switchAhead(element, image){
-        //get the index of the image
-        var count = document.getElementById(element);
-        var image = document.getEle
-        var doodles = document.getElementsByClassName("slideshow");
-        image.src = doodles[count+1].style.display = "block";
-    }
 
 </script>
 </head>
@@ -272,7 +246,7 @@
                     <a href = "#ec"><img id = "EcsImg" src = "ecs.png"/></a>
                     <a href = "#pl"><img id = "PlImg" src = "pl.png"/></a>
                     <a href = "#aw"><img id = "ArtImg" src = "art.png"/></a>
-                    <a href = ""><img id = "ghlogo" src = "ghlogo.png"/></a>
+                    <a href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/></a>
                 </nav>
             </div>
         </header>
@@ -439,7 +413,6 @@
         <script>
             var index = 0;
             show();
-            if(paused !== true){
                 function show(){
                     var slides = document.getElementsByClassName("slideshow");
                     for( var i = 0 ; i < slides.length ; i++){
@@ -450,8 +423,7 @@
                         index = 1;
                     }
                     slides[index-1].style.display = "block";
-                    setTimeout(show, 3000);
-                }   
+                    setTimeout(show, 3000);  
             }
         </script>
         
