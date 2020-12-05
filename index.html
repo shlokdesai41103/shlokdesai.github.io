@@ -4,6 +4,15 @@
 <title>Trial</title>
     <link rel="shortcut icon" type="img/x-icon" href="favicon.ico?"/>
 <style>
+    :root{
+        
+        font-size: 16px;
+        font-family: 'Open Sans';
+        --text-primary: #b6b6b6;
+        --text-secondary: #ececec;
+        --bg-primary: #23232e;
+        --bg-secondary: #141418;
+    }
     /*div{
         width: 100%;
         height: 600px;
@@ -11,7 +20,23 @@
         position: relative;
     }*/
     body{
-        background: #e6e6e6;
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    body::-webkit-scrollbar{
+        width: .25rem;
+    }
+    body::-webkit-scrollbar-track{
+        background: #1e1e24;
+    }
+    body::-webkit-scrollbar-thumb {
+        background: #6649b8;
+    }
+    main{
+        margin-left: 5rem;
+        padding: 1rem;
     }
     .header h1{
         color: #266ed9;
@@ -20,7 +45,7 @@
         color: #874b9b;
         font-family: "Arial Black", fantasy;
     }
-    .container{
+    /*.container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -77,15 +102,132 @@
        border-right-width: .5px;
        border-radius: 25px;
    }*/
+    .navbar{
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+        background-color: #ececec;
+    }
+    .navbar-nav{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .nav-item{
+        width: 100%;
+    }
+    .nav-link{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        text-decoration: none;
+        color: black;
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.5);
+        transition: 600ms;
+    }
+    .link-text{
+        display: none;
+        margin-left: 1rem;
+    }
+    .nav-link img{
+        min-width: 2rem;
+        margin: 0 1.5rem;
+    }
+    .navbar:hover{
+        width: 16rem;
+    }
+    .navbar:hover .link-text{
+        display: block;
+    }
+    .nav-link:hover{
+        filter: grayscale(0%) opacity(1);
+        background-color: #ADD8E6;
+    }
+    .logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        letter-spacing: .3ch;
+    }
+    .logo img{
+        transform: rotate(0deg);
+        transition: transform 500ms;
+    }
+    .navbar:hover .logo img{
+        transform: rotate(-360deg);
+    }
+    .nav-item:last-child{
+        margin-top: auto;
+    }
+    /* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo img
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
+    
+    /* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+    .navbar:hover .link-text{
+        display: none;
+    }
+    .navbar:hover{
+        width: 100vw;
+    }
+}
    .middle{
        margin-left: 100px;
        margin-right: 100px;
        padding: 20px;
    }
-    
-    .content{
-        margin-top: 70px;
-    }
+   
    div.rightmargin{
        position: absolute;
        right: 10px;
@@ -171,7 +313,6 @@
     #logo{
         height: 70px;
         width: 70px;
-        position: absolute;
         margin-top: 5px;
     }
    .effect{
@@ -243,24 +384,33 @@
 </head>
 <body>
     <div class = "container">
-        <header>
-            <img class = "item" id = "logo" src = "favicon.png"/>
-            <div class = "wrapper">
-                <div class = "logo">
-                    
-                    <a class = "item" href = "#">  Shlok Desai</a>
-                </div>
-                <nav>
-                    <a  class = "item" href = "#wai"><img id = "BioImg" src = "bio.png"/></a>
-                    <a class = "item" href = "#edu"><img id = "EduImg" src = "edu.png"/></a>
-                    <a class = "item" href = "#ac"><img id = "AcImg" src = "ac.png"/></a>
-                    <a class = "item" href = "#ec"><img id = "EcsImg" src = "ecs.png"/></a>
-                    <a class = "item" href = "#pl"><img id = "PlImg" src = "pl.png"/></a>
-                    <a class = "item" href = "#aw"><img id = "ArtImg" src = "art.png"/></a>
-                    <a class = "item" href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/></a>
-                </nav>
-            </div>
-        </header>
+        
+            
+            
+                
+        <nav class = "navbar">
+            <ul class = "navbar-nav">
+                <li class = "logo">
+                    <a class = "nav-link" href = "#"><span class = "link-text">Shlok Desai</span><img id = "logo" src = "favicon.png"/></a>
+                </li>
+                <li class = "nav-item"><a  class = "nav-link" href = "#wai"><img id = "BioImg" src = "bio.png"/><span class = "link-text">Bio</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#edu"><img id = "EduImg" src = "edu.png"/><span class = "link-text">Education</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#ac"><img id = "AcImg" src = "ac.png"/><span class = "link-text">Academics</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#ec"><img id = "EcsImg" src = "ecs.png"/><span class = "link-text">Extra-Curriculars</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#pl"><img id = "PlImg" src = "pl.png"/><span class = "link-text">Programming Lang.</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#aw"><img id = "ArtImg" src = "art.png"/><span class = "link-text">Art Work</span></a></li>
+                <li class = "nav-item" id = "git"><a class = "nav-link" href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/><span class = "link-text">GitHub</span></a></li>
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+        </nav>
     </div>
     
 
