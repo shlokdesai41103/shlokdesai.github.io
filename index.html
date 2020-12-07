@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Trial</title>
+<title>Shlok Desai</title>
+    <script src="https://kit.fontawesome.com/ad46f338d2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="img/x-icon" href="favicon.ico?"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
 <style>
     :root{
         
@@ -22,7 +30,7 @@
     }*/
     body{
         color: black;
-        background-color: white;
+        background-color: #e8e8e8;
         margin: 0;
         padding: 0;
     }
@@ -30,10 +38,10 @@
         width: .25rem;
     }
     body::-webkit-scrollbar-track{
-        background: #1e1e24;
+        background: #30475e;
     }
     body::-webkit-scrollbar-thumb {
-        background: #6649b8;
+        background: #f05454;
     }
     main{
         margin-left: 5rem;
@@ -43,71 +51,18 @@
         color: #266ed9;
     }
     h1{
-        color: #874b9b;
-        font-family: "Arial Black", fantasy;
+        color: #f05454;
+        font-family: 'Dosis', sans-serif;
+        font-size: 35px;
     }
-    /*.container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: baseline;
-        align-content: space-around;
-        background: #ffff;
+    .h2 span{
+        font-family: 'Kanit', sans-serif;
     }
-    header{
-        padding: 5px;
-        width: 100%;
-        margin-top: -30px;
-        height: 70px;
-        position: fixed;
-        background: #ffff;
-        
-    }
-    .wrapper{
-        width: 95%;
-    }
-    div.logo{
-        line-height: 100px;
-        width:30%;
-        float: left;
-    }-->
-    .logo a{
-        text-decoration:none;
-        font-family: "Arial Black";
-        font-size: 30px;
-        margin-left: 80px;
-        margin-top: -10px;
-        position: absolute;
-        
-    }
-    
-    
-    nav{
-        float: right;
-        line-height: 100px;
-        font-size: 20px;
-        position: relative;
-    }
-    
-   /*.leftmargin{
-       position: fixed;
-       left: 10px;
-       top: 140px;
-       width: 200px;
-       padding: 5px;
-       border-style: solid;
-       border-top-width: .5px;
-       border-bottom-width: .5px;
-       border-left-width: .5px;
-       border-right-width: .5px;
-       border-radius: 25px;
-   }*/
     .navbar{
         width: 5rem;
         height: 100vh;
         position: fixed;
-        background-color: #ececec;
+        background-color: #30475e;
     }
     .navbar-nav{
         list-style: none;
@@ -135,9 +90,9 @@
         display: none;
         margin-left: 1rem;
     }
-    .nav-link img{
+    .nav-link i{
         min-width: 2rem;
-        margin: 0 1.5rem;
+        margin: 0 1.5rem  ;
     }
     .navbar:hover{
         width: 16rem;
@@ -147,7 +102,7 @@
     }
     .nav-link:hover{
         filter: grayscale(0%) opacity(1);
-        background-color: #ADD8E6;
+        background-color: #f05454;
     }
    logo {
         font-weight: bold;
@@ -166,32 +121,7 @@
     .nav-item:last-child{
         margin-top: auto;
     }
-    /* Large screens */
-/*@media only screen and (min-width: 600px) {
-  .navbar {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-  }
-
-  .navbar:hover {
-    width: 16rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
-  }
-
-  .navbar:hover .logo img
-  {
-    margin-left: 11rem;
-  }
-
-  .navbar:hover .logo-text
-  {
-    left: 0px;
-  }
-}*/
+    
     
     /* Small screens, will have to make it a one logo menu bar */
 @media only screen and (max-width: 600px) {
@@ -223,35 +153,7 @@
     .navbar:hover{
         width: 100%;
     }
-    #BioImg{
-       height: 100px;
-       width: 10px;
-   }
-   #EduImg{
-       height: 10px;
-       width: 10px;
-   }
-   #AcImg{
-       height: 10px;
-       width: 10px;
-   }
-   #EcsImg{
-       height: 10px;
-       width: 10px;
-   }
-   #PlImg{
-       height: 10px;
-       width: 10px;
-   }
-   #ArtImg{
-       height: 10px;
-       width: 10px;
-   }
-    #ghlogo{
-       height: 10px;
-       width: 10px;
-   }
-    .nav-link img{
+    .nav-link i{
         min-width: 1rem;
         margin: 0 .5rem;
     }
@@ -260,89 +162,6 @@
        margin-left: 100px;
        margin-right: 100px;
        padding: 20px;
-   }
-   
-   /*div.rightmargin{
-       position: absolute;
-       right: 10px;
-       width: 100px;
-       font-weight: bold;
-   }*/
-   #closed{ 
-       height: 15px;
-       width: 15px;
-   }
-   #closed2{
-       height: 15px;
-       width: 15px;
-   }
-   #closed3{
-       height: 15px;
-       width: 15px;
-   }
-   #closed4{
-       height: 15px;
-       width: 15px;
-   }
-   #closed5{
-       height: 15px;
-       width: 15px;
-   }
-   #closed6{
-       height: 15px;
-       width: 15px;
-   }
-   #closed7{
-       height: 15px;
-       width: 15px;
-   }
-   #closed8{
-       height: 15px;
-       width: 15px;
-   }
-   #closed9{
-       height: 15px;
-       width: 15px;
-   }
-   #closed10{
-       height: 15px;
-       width: 15px;
-   }
-   #closed11{
-       height: 15px;
-       width: 15px;
-   }
-   #closed12{
-       height: 15px;
-       width: 15px;
-   }
-   #BioImg{
-       height: 30px;
-       width: 30px;
-   }
-   #EduImg{
-       height: 30px;
-       width: 30px;
-   }
-   #AcImg{
-       height: 30px;
-       width: 30px;
-   }
-   #EcsImg{
-       height: 30px;
-       width: 30px;
-   }
-   #PlImg{
-       height: 30px;
-       width: 30px;
-   }
-   #ArtImg{
-       height: 30px;
-       width: 30px;
-   }
-    #ghlogo{
-       height: 30px;
-       width: 30px;
    }
     #logo{
         height: 70px;
@@ -362,12 +181,11 @@
        }
     }
     a{
-        text-decoration: none;
-        color: #248f24;
+        text-decoration:none;
+        color: #30475e;
     }
     li{
-        color: #b36619;
-        font-family:"Avant Garde", sans-serif;
+        color: #222831;
     }
     .slideshow{
         width: 300px;
@@ -396,36 +214,45 @@
         if(element.style.display == "none"){
             //if hidden, unhide It
             element.style.display = "block";
-            image.src = "open.png"
+            
         }
         
         else{
             //if not hidden, hide It
             element.style.display = "none";
-            image.src = "close.png"
         }
     
     }
     
 
 </script>
+    
 </head>
+    
 <body>
+    
     <div class = "container">
         
                 
         <nav class = "navbar">
             <ul class = "navbar-nav">
                 <li class = "logo">
-                    <a class = "nav-link" href = "#"><span class = "link-text">Shlok Desai</span><img id = "logo" src = "favicon.png"/></a>
+                    <a class = "nav-link" href = "#"><span class = "link-text" style = "font-family: 'Carrois Gothic', sans-serif; font-size:30px;">Shlok Desai</span><img id = "logo" src = "favicon.png"/></a>
                 </li>
-                <li class = "nav-item"><a  class = "nav-link" href = "#wai"><img id = "BioImg" src = "bio.png"/><span class = "link-text">Bio</span></a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#edu"><img id = "EduImg" src = "edu.png"/><span class = "link-text">Education</span></a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#ac"><img id = "AcImg" src = "ac.png"/><span class = "link-text">Academics</span></a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#ec"><img id = "EcsImg" src = "ecs.png"/><span class = "link-text">Extra-Curriculars</span></a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#pl"><img id = "PlImg" src = "pl.png"/><span class = "link-text">Programming Lang.</span></a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#aw"><img id = "ArtImg" src = "art.png"/><span class = "link-text">Art Work</span></a></li>
-                <li class = "nav-item" id = "git"><a class = "nav-link" href = "https://github.com/shlokdesai" target = "_blank"><img id = "ghlogo" src = "ghlogo.png"/><span class = "link-text">GitHub</span></a></li>
+                <li class = "nav-item"><a  class = "nav-link" href = "#wai"><i  class="fas fa-user fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Bio</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#edu"><i class="fas fa-school fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Education</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#ac"><i class="fas fa-book fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Academics</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#ec"><i class="fas fa-award fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Extra-Curriculars</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#pl"><i class="fas fa-code fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Programming Lang.</span></a></li>
+                <li class = "nav-item"><a class = "nav-link" href = "#aw"><i class="fas fa-palette fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">Art Work</span></a></li>
+                <li class = "nav-item" id = "git"><a class = "nav-link" href = "https://github.com/shlokdesai" target = "_blank"><i class="fab fa-github fa-2x"></i><span class = "link-text" style = "font-family: 'Rajdhani', sans-serif;
+font-size: 20px;">GitHub</span></a></li>
                 
             </ul>
             
@@ -461,125 +288,128 @@
 
     <div class = "middle">
         <div class = "content">
-            <h1 id = "wai"><img id = "BioImg" src = "bio.png"/>Bio</h1>
-        <p>My name is Shlok Desai. I am Senior at West Humber Collegiate Institute.<br> I am a programming enthusiast, and am exploring many areas of software development and putting my programming skills into use in the respective areas.<br> Along with my keen interest and passion for software development, I am also an avid Doodle artist!  </p>
+            <h1 id = "wai"><i  class="fas fa-user"></i> Bio</h1>
+            <ul style = "list-style: none">
+            <li style = "font-family: 'Proza Libre', sans-serif;">
+                My name is Shlok Desai. I am Senior at West Humber Collegiate Institute.<br> I am a programming enthusiast, and am exploring many areas of software development and putting my programming skills into use in the respective areas.<br> Along with my keen interest and passion for software development, I am also an avid Doodle artist!
+            </li></ul>
 
-        <h1 id = "edu"><img id = "EduImg" src = "edu.png"/>Education</h1>
+            <h1 id = "edu"><i class="fas fa-school"></i>    Education</h1>
         <p>
         <ul style = "list-style: none">
         
-        <li> <img id = "closed" src = "close.png" alt = "" onclick = "ToggleVisibility('closed', 'zse')" />Zydus School for Excellence (Ahmedabad, India)</li>
-            <ul id = "zse" style = "display: none">
-            <li> Here I took education from Grade 5 to Grade 9. 
-            <li>I focused on the Mathematics and Sciences, and earned high marks in the respective fields.
-            <li>I also took on the responsibility of class representative for two years
+        <li style="font-family: 'Kanit', sans-serif; font-size: 20px;"><i id = "closed1" class="fas fa-angle-down" onclick = "ToggleVisibility('closed1', 'zse')"></i>Zydus School for Excellence (Ahmedabad, India)</li>
+            <ul id = "zse" style = "display: none" >
+            <li style = "font-family: 'Proza Libre', sans-serif;"> Here I took education from Grade 5 to Grade 9. 
+            <li style = "font-family: 'Proza Libre', sans-serif;">I focused on the Mathematics and Sciences, and earned high marks in the respective fields.
+            <li style = "font-family: 'Proza Libre', sans-serif;">I also took on the responsibility of class representative for two years
             </ul>
-        <li><img id = "closed2" src = "close.png" alt = "" onclick = "ToggleVisibility('closed2', 'whci')" />West Humber Collegiate Institute (Etobicoke, Canada)</li>
+        <li style="font-family: 'Kanit', sans-serif; font-size: 20px;"><i id = "closed2" class="fas fa-angle-down" onclick = "ToggleVisibility('closed2', 'whci')"></i>West Humber Collegiate Institute (Etobicoke, Canada)</li>
             <ul id = "whci" style = "display: none">
-            <li> Here I studied from Grade 10 to Grade 12.
-            <li> I was introduced to Computer Science in Grade 10.
-            <li> Took Computer Science courses in all three years that I studied there, and achieved high grades.
-            <li> Scored high grades in all Science and Mathematics courses, in all three years.
-            <li> While pursuing my passion for computer science I also took art courses like <b>Photography</b> and <b>Digital Media</b> and performed extremely well in the respective fields.
+            <li style = "font-family: 'Proza Libre', sans-serif;"> Here I studied from Grade 10 to Grade 12.
+            <li style = "font-family: 'Proza Libre', sans-serif;"> I was introduced to Computer Science in Grade 10.
+            <li style = "font-family: 'Proza Libre', sans-serif;"> Took Computer Science courses in all three years that I studied there, and achieved high grades.
+            <li style = "font-family: 'Proza Libre', sans-serif;"> Scored high grades in all Science and Mathematics courses, in all three years.
+            <li style = "font-family: 'Proza Libre', sans-serif;"> While pursuing my passion for computer science I also took art courses like <b>Photography</b> and <b>Digital Media</b> and performed extremely well in the respective fields.
             </ul>
         </ul>
         </p>
 
-        <h1 id = "ac"><img id = "AcImg" src = "ac.png"/>Academics</h1>
+        <h1 id = "ac"><i class="fas fa-book"></i>   Academics</h1>
         <ul style = "list-style: none">
-        <li><img id = "closed3" src = "close.png" alt = "" onclick = "ToggleVisibility('closed3', 'gr10')" />Grade 10</li>
+        <li style="font-family: 'Kanit', sans-serif; font-size: 20px;"><i id = "closed3" class="fas fa-angle-down" onclick = "ToggleVisibility('closed3', 'gr10')"></i>Grade 10</li>
         <ul id = "gr10" style = "display: none">
-        <li> Highest Marks in Grade 10 Mathematics (100%)
-        <li> 99% in Grade 10 Digital Media
-        <li> Third Highest mark in all of Grade 10
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Highest Marks in Grade 10 Mathematics (100%)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 99% in Grade 10 Digital Media
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Third Highest mark in all of Grade 10
         </ul>
-        <li><img id = "closed4" src = "close.png" alt = "" onclick = "ToggleVisibility('closed4', 'gr11')" />Grade 11</li>
+        <li style="font-family: 'Kanit', sans-serif; font-size: 20px;"><i id = "closed4" class="fas fa-angle-down" onclick = "ToggleVisibility('closed4', 'gr11')"></i>Grade 11</li>
         <ul id = "gr11" style = "display: none">
-        <li> 98% in Grade 11 Functions
-        <li> 97% in Grade 11 Chemitry
-        <li> 99% in Grade 11 Biology
-        <li> 96% in Grade 11 Computer Science
-        <li> 98% in Grade 11 Photography
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 98% in Grade 11 Functions
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 97% in Grade 11 Chemitry
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 99% in Grade 11 Biology
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 96% in Grade 11 Computer Science
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 98% in Grade 11 Photography
         </ul>
-        <li><img id = "closed5" src = "close.png" alt = "" onclick = "ToggleVisibility('closed5', 'gr12')" />Grade 12</li>
+        <li style="font-family: 'Kanit', sans-serif; font-size: 20px;"><i id = "closed5" class="fas fa-angle-down" onclick = "ToggleVisibility('closed5', 'gr12')"></i>Grade 12</li>
         <ul id = "gr12" style = "display: none">
-        <li> 100% in Grade 12 Advanced Functions
-        <li> 98.2% in Grade 12 Computer Science
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 100% in Grade 12 Advanced Functions
+        <li style = "font-family: 'Proza Libre', sans-serif;"> 98.2% in Grade 12 Computer Science
         </ul>
         </ul>
 
-        <h1 id = "ec"><img id = "EcsImg" src = "ecs.png"/>Extra-Curriculars</h1>
+        <h1 id = "ec"><i class="fas fa-award"></i>  Extra-Curriculars</h1>
         <ul style = "list-style: none">
-            <li><img id = "closed6" src = "close.png" alt = "" onclick = "ToggleVisibility('closed6', 'app')" /><a href = "https://github.com/shlokdesai/EncryptionMessenger" target="_blank">Encryption Messager - Android Application (2019-2020)</a>
+            <li><i id = "closed6" class="fas fa-angle-down" onclick = "ToggleVisibility('closed6', 'app')"></i><a href = "https://github.com/shlokdesai/EncryptionMessenger" target="_blank" style="font-family: 'Kanit', sans-serif; font-size: 20px;">Encryption Messager - Android Application (2019-2020)</a>
         <ul style = "list-style: none; display: none" id = "app" >
-        <li>I created this application using Firebase databases and android studio.<br> It is a messaging app that encrypts the messages that users send to each other, using different encryption methods.
+        <li style = "font-family: 'Proza Libre', sans-serif;">I created this application using Firebase databases and android studio.<br> It is a messaging app that encrypts the messages that users send to each other, using different encryption methods.
         </ul>
-        <li><img id = "closed7" src = "close.png" alt = "" onclick = "ToggleVisibility('closed7', 'pc')" />Programming club Senior Executive (2019 - 2021)
+        <li><i id = "closed7" class="fas fa-angle-down" onclick = "ToggleVisibility('closed7', 'pc')"></i><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;" >Programming club Senior Executive (2019 - 2021)</span>
         <ul style = "list-style: none; display: none" id = "pc">
-        <li>I planned lessons, and taught a large group of students how to code.<br> This led to many students being prepared for their future computer science courses, and/or performing better in programming competitions.
+        <li style = "font-family: 'Proza Libre', sans-serif;">I planned lessons, and taught a large group of students how to code.<br> This led to many students being prepared for their future computer science courses, and/or performing better in programming competitions.
         </ul>
-        <li><img id = "closed8" src = "close.png" alt = "" onclick = "ToggleVisibility('closed8', 'l2l')" />L2L Tutor (2019-2020)
+        <li><i id = "closed8" class="fas fa-angle-down" onclick = "ToggleVisibility('closed8', 'l2l')"></i><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;">L2L Tutor (2019-2020)</span>
         <ul style = "list-style: none; display: none" id = "l2l">
-        <li>Mentored and tutored peers in Math and Computer Science. This lead to them performing better in class.
+        <li style = "font-family: 'Proza Libre', sans-serif;">Mentored and tutored peers in Math and Computer Science. This lead to them performing better in class.
         </ul>
-        <li><img id = "closed9" src = "close.png" alt = "" onclick = "ToggleVisibility('closed9', 'als')" />ALS Site Manager (2019-2020)
+            <li><i id = "closed9" class="fas fa-angle-down" onclick = "ToggleVisibility('closed9', 'als')"></i><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;">ALS Site Manager (2019-2020)</span>
         <ul style = "list-style: none; display: none" id = "als">
-        <li>Was in charge of organising and planning the site for a city wide fund raiser for ALS patients. Sadly, the fundraiser had to be canceled due to COVID-19 after putting in months of hardwork.
+        <li style = "font-family: 'Proza Libre', sans-serif;">Was in charge of organising and planning the site for a city wide fund raiser for ALS patients. Sadly, the fundraiser had to be canceled due to COVID-19 after putting in months of hardwork.
         </ul>
-        <li>PICOCTF - All Canada 16th Rank (2019)
-        <li>Varsity Cross Country Team Member(2018-2019)
-        <li><img id = "closed10" src = "close.png" alt = "" onclick = "ToggleVisibility('closed10', 'ap')" />AP Scholar (2019)
+        <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;">PICOCTF - All Canada 16th Rank (2019)
+        <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;">Varsity Cross Country Team Member(2018-2019)
+            <li><i id = "closed10" class="fas fa-angle-down" onclick = "ToggleVisibility('closed10', 'ap')"></i><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;">AP Scholar (2019)</span>
         <ul style = "list-style: none; display: none" id = "ap">
-        <li>I took 3 AP Exams (AP Calc AB, AP Chemistry, AP Computer Science) which were not offered by the school.<br> I studied for them individually while also managing school work and changing times due to COVID-19.
+        <li style = "font-family: 'Proza Libre', sans-serif;">I took 3 AP Exams (AP Calc AB, AP Chemistry, AP Computer Science) which were not offered by the school.<br> I studied for them individually while also managing school work and changing times due to COVID-19.
         </ul>
-        <li><img id = "closed11" src = "close.png" alt = "" onclick = "ToggleVisibility('closed11', 'lang')" />Participated in several competitions such as:
+            <li><i id = "closed11" class="fas fa-angle-down" onclick = "ToggleVisibility('closed11', 'lang')"></i><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;">Participated in several competitions such as:</span>
         <ul id = "lang" style = "display: none">
-        <li> Waterloo Beaver (2019)
-        <li> Waterloo Cayley (2019)
-        <li> Guelph Humber Stem Olympics (2019)
-        <li> Waterloo CCC (2020)
-        <li> Waterloo Fermat (2020)
-        <li> ECOO (2020)
-        <li> Waterloo CSMC (2020)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Waterloo Beaver (2019)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Waterloo Cayley (2019)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Guelph Humber Stem Olympics (2019)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Waterloo CCC (2020)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Waterloo Fermat (2020)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> ECOO (2020)
+        <li style = "font-family: 'Proza Libre', sans-serif;"> Waterloo CSMC (2020)
         </ul>
-        <li>Work Experience
-            <ul>
-            <li><img id = "closed12" src = "close.png" alt = "" onclick = "ToggleVisibility('closed12', 'coop')" />Brand-EQ (Front End Web Developer and Project Manager) (2020)
+            <li><span style = "font-family: 'Kanit', sans-serif; font-size: 20px;">Work Experience</span>
+            <ul style = "list-style: none">
+                <li style = "font-family: 'Kanit', sans-serif;"><i id = "closed12" class="fas fa-angle-down" onclick = "ToggleVisibility('closed12', 'coop')"></i>Brand-EQ (Front End Web Developer and Project Manager) (2020)</li>
             <ul  id = "coop" style = "list-style: none; display: none">
-            <li>While working for BrandEQ, I worked as the project manager of a team.<br> My duties included planning group meetings and insuring that the group meetings were the most productive, and presenting our work in front of the higher management of the company.<br> We worked very efficiently and recieved positive comments for our work.<br> My team was able to construct a website for a black business, and successfully support a cause.
+            <li style = "font-family: 'Proza Libre', sans-serif;">While working for BrandEQ, I worked as the project manager of a team.<br> My duties included planning group meetings and insuring that the group meetings were the most productive, and presenting our work in front of the higher management of the company.<br> We worked very efficiently and recieved positive comments for our work.<br> My team was able to construct a website for a black business, and successfully support a cause.
             </ul>
             </ul>
         </ul>
 
-        <h1 id = "pl"><img id = "PlImg" src = "pl.png"/>Programming Languages</h1>
+        <h1 id = "pl"><i class="fas fa-code"></i>   Programming Languages</h1>
         <ul id = "pllist">
-        <li>Java (Very Fluent, 2 years of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;">Java (Very Fluent, 2 years of experience)</li>
         <ul style = "list-style: none">
-        <li>I started learning java in Grade 11.<br> Using my skills in java, I gave participated in several programming competitions, made an app in android studio, and also gave the AP Computer Science Exam in the same language.
+        <li style = "font-family: 'Proza Libre', sans-serif;">I started learning java in Grade 11.<br> Using my skills in java, I gave participated in several programming competitions, made an app in android studio, and also gave the AP Computer Science Exam in the same language.
         </ul>
-        <li> Python (1 year of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;"> Python (1 year of experience)</li>
         <ul style = "list-style: none">
-        <li>Learnt python in Grade 10. 
+        <li style = "font-family: 'Proza Libre', sans-serif;">Learnt python in Grade 10. 
         </ul>
-        <li> XML (1 year of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;"> XML (1 year of experience)</li>
         <ul style = "list-style: none">
-        <li>XML was the scripting language that I had to write to design the UI of my app.
+        <li style = "font-family: 'Proza Libre', sans-serif;">XML was the scripting language that I had to write to design the UI of my app.
         </ul>
-        <li> HTML (5 months of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;"> HTML (5 months of experience)</li>
         <ul style = "list-style: none">
-        <li>Used HTML to make websites and practice making websites.
+        <li style = "font-family: 'Proza Libre', sans-serif;">Used HTML to make websites and practice making websites.
         </ul>
-        <li> CSS (4 months of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;"> CSS (4 months of experience) </li>
         <ul style = "list-style: none">
-        <li>Used simultaneously while creating websites.
+        <li style = "font-family: 'Proza Libre', sans-serif;">Used simultaneously while creating websites.
         </ul>
-        <li> C# (1 month of experience)
+            <li style = "font-family: 'Kanit', sans-serif; font-size: 20px;"> C# (1 month of experience)</li>
         <ul style = "list-style: none">
-        <li>Used recently to create games in Unity. 
+        <li style = "font-family: 'Proza Libre', sans-serif;">Used recently to create games in Unity. 
         </ul>
         </ul>
 
-        <h1 id = "aw"><img id = "ArtImg" src = "art.png"/>Art Work</h1>
+        <h1 id = "aw"><i class="fas fa-palette"></i>    Art Work</h1>
         
         <div class = "showArt">
             <img class = "slideshow effect" src = "doodle1.JPG" />
